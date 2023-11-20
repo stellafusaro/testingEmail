@@ -1,0 +1,72 @@
+import React from "react";
+import { Input } from "@material-tailwind/react";
+import { IoMdSearch } from "react-icons/io";
+
+export default function LeftPanel() {
+  return (
+    <div className="flex h-full w-full items-center justify-center gap-7 bg-purple-500">
+      {/* Left Panel */}
+      <div className="flex flex-col h-[600px] w-[300px] gap-2 rounded-xl p-7 bg-white">
+        <div className="relative">
+          <input
+            placeholder="Search..."
+            className="my-5 h-fit w-full rounded-full bg-purple-500 p-2"
+          />
+          <div className="absolute left-1 top-1">
+            <IoMdSearch />
+          </div>
+        </div>
+        <div className="text-sm">This week</div>
+        <div className="flex flex-col">
+          <div className="text-base">Stella Fusaro</div>
+          <div className="flex flex-row justify-between text-sm">
+            <p>Meeting for PitchDeck</p>
+            <p>7/4/23</p>
+          </div>
+          <div className="text-sm text-gray-400">Good Evening......</div>
+        </div>
+        <div className="flex flex-col">
+          <div className="text-base">Stella Fusaro</div>
+          <div className="flex flex-row justify-between text-sm">
+            <p>Meeting for PitchDeck</p>
+            <p>7/4/23</p>
+          </div>
+          <div className="text-sm text-gray-400">Good Evening......</div>
+        </div>
+        <div className="flex flex-col">
+          <div className="text-base">Stella Fusaro</div>
+          <div className="flex flex-row justify-between text-sm">
+            <p>Meeting for PitchDeck</p>
+            <p>7/4/23</p>
+          </div>
+          <div className="text-sm text-gray-400">Good Evening......</div>
+        </div>
+        <div className="flex flex-col">
+          <div className="text-base">Stella Fusaro</div>
+          <div className="flex flex-row justify-between text-sm">
+            <p>Meeting for PitchDeck</p>
+            <p>7/4/23</p>
+          </div>
+          <div className="text-sm text-gray-400">Good Evening......</div>
+        </div>
+      </div>
+
+      {/* Drafts Panel */}
+      <div className="flex flex-col h-[600px] w-[300px] gap-2 rounded-xl p-7 bg-white">
+        <h2 className="text-lg font-bold mb-4">Drafts</h2>
+        <div className="flex w-72 flex-col gap-6">
+          <Input variant="static" label="" placeholder="To " />
+        </div>
+        <div className="flex w-72 flex-col gap-6">
+          <Input variant="static" label="" placeholder="From " />
+        </div>
+        <div className="flex w-72 flex-col gap-6">
+          <Input variant="static" label="" placeholder="Subject " />
+        </div>
+        <div className="flex w-72 flex-col gap-6">
+          <Input variant="static" label="" placeholder="Your Message" />
+        </div>
+      </div>
+    </div>
+  );
+}
